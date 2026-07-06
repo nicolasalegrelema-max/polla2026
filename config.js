@@ -10,13 +10,13 @@ window.POLLA_CONFIG = {
   title: "Polla Familiar Mundial 2026",
 
   // Obligatoria: hoja Ranking
-  rankingCsvUrl: "https://docs.google.com/spreadsheets/d/16BpOgajRmog8fDaI5A5h1DwX5jbZ87J1/edit?gid=1020095959#gid=1020095959",
+  rankingCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTp3eOMgvsIu3FPATnQxbxVVnoS3ntL4N8hHmPoqFGYwi2_nbi2Dya21ZwfAeyhlQ/pub?gid=1020095959&single=true&output=csv",
 
   // Obligatoria: hoja Resultados
-  resultsCsvUrl: "https://docs.google.com/spreadsheets/d/16BpOgajRmog8fDaI5A5h1DwX5jbZ87J1/edit?gid=39821786#gid=39821786",
+  resultsCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTp3eOMgvsIu3FPATnQxbxVVnoS3ntL4N8hHmPoqFGYwi2_nbi2Dya21ZwfAeyhlQ/pub?gid=39821786&single=true&output=csv",
 
   // Opcional pero recomendada: hoja Puntajes para detalle por participante
-  scoresCsvUrl: "https://docs.google.com/spreadsheets/d/16BpOgajRmog8fDaI5A5h1DwX5jbZ87J1/edit?gid=1666057862#gid=1666057862",
+  scoresCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTp3eOMgvsIu3FPATnQxbxVVnoS3ntL4N8hHmPoqFGYwi2_nbi2Dya21ZwfAeyhlQ/pub?gid=1666057862&single=true&output=csv",
 
   // Si no quieres detalle por participante todavía, deja scoresCsvUrl vacío: ""
 };
