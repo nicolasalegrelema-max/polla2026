@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polla Familiar Mundial 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Polla Familiar</p>
+      <h1>Mundial 2026</h1>
+      <p class="subtitle">Ranking en vivo, resultados, bonus y detalle de puntajes conectado a Google Sheets.</p>
+    </div>
+
+    <div class="update-card">
+      <span>Última actualización</span>
+      <strong id="lastUpdated">Cargando...</strong>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary-grid">
+      <article class="summary-card leader-card"><span>Líder actual</span><strong id="leaderName">-</strong><small id="leaderPts">- pts</small></article>
+      <article class="summary-card"><span>Participantes</span><strong id="participantCount">-</strong><small>pollas registradas</small></article>
+      <article class="summary-card"><span>Partidos completos</span><strong id="playedCount">-</strong><small id="totalMatches">de 16 partidos</small></article>
+      <article class="summary-card"><span>Próximo partido</span><strong id="nextMatch">-</strong><small id="nextRound">-</small></article>
+    </section>
+
+    <section class="podium panel">
+      <div class="section-title"><h2>Podio</h2><p>Los tres primeros puestos del ranking general.</p></div>
+      <div id="podiumGrid" class="podium-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div class="section-title"><h2>Ranking general</h2><p>Ordenado por puntaje total. Empates comparten el mismo puesto.</p></div>
+        <input id="searchInput" type="search" placeholder="Buscar participante..." />
+      </div>
+      <div class="table-wrap">
+        <table id="rankingTable">
+          <thead><tr><th>Puesto</th><th>Participante</th><th>Octavos</th><th>Cuartos</th><th>Semifinal</th><th>3er y 4to</th><th>Final</th><th>Bonus</th><th>Total</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <section class="panel">
+        <div class="section-title"><h2>Resultados oficiales</h2><p>Se alimenta desde la hoja Resultados.</p></div>
+        <div class="table-wrap compact">
+          <table id="resultsTable">
+            <thead><tr><th>#</th><th>Ronda</th><th>Partido</th><th>Marcador</th><th>Clasificado</th><th>Estado</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Detalle por participante</h2><p>Revisa los puntos de cada polla partido por partido.</p></div>
+        <select id="participantSelect"><option value="">Selecciona un participante</option></select>
+        <div id="participantDetail" class="detail-empty">Selecciona un participante para ver el detalle.</div>
+      </section>
+    </section>
+
+    <section class="grid-2">
+      <section class="panel">
+        <div class="section-title"><h2>Bonus</h2><p>Predicciones de campeón, subcampeón, tercer puesto, cuarto puesto y goleador.</p></div>
+        <div class="table-wrap compact">
+          <table id="bonusTable">
+            <thead><tr><th>Participante</th><th>Campeón</th><th>Subcampeón</th><th>3er</th><th>4to</th><th>Goleador</th><th>Total</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Estadísticas</h2><p>Resumen automático según los puntajes calculados.</p></div>
+        <div id="statsGrid" class="stats-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>Organizada por el Papapá. Dashboard producido para la Polla Familiar Mundial 2026.</footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
