@@ -50,3 +50,38 @@
     font-weight: 900;
   }
 }
+@media (max-width: 700px) {
+  /* Hace scrolleables las tablas que no son el ranking */
+  .compact {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #resultsTable,
+  #bonusTable {
+    min-width: 760px;
+  }
+
+  /* Hace scrolleables las tarjetas de detalle por participante */
+  #participantDetail {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .detail-card {
+    min-width: 680px;
+  }
+
+  /* Evita que los textos grandes rompan el layout */
+  .panel {
+    overflow: hidden;
+  }
+
+  .section-title p {
+    overflow-wrap: break-word;
+  }
+}
