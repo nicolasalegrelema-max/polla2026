@@ -1,7 +1,406 @@
-:root{--bg:#06110d;--panel:rgba(14,27,23,.86);--text:#f4fbf6;--muted:#a7bdb1;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.20);--accent:#23c66d;--accent-2:#f4c95d;--blue:#5bd7ff;--shadow:0 24px 70px rgba(0,0,0,.32)}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:radial-gradient(circle at 90% 0%,rgba(35,198,109,.28),transparent 34rem),radial-gradient(circle at 0% 20%,rgba(91,215,255,.14),transparent 25rem),linear-gradient(135deg,#030605,var(--bg) 55%,#0a1c15);min-height:100vh}.bg-glow{position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(circle at center,black,transparent 75%)}.hero{display:flex;justify-content:space-between;align-items:center;gap:2rem;padding:3rem clamp(1rem,5vw,5rem) 2.2rem;border-bottom:1px solid var(--line);position:relative}.eyebrow{margin:0 0 .4rem;color:var(--accent-2);text-transform:uppercase;letter-spacing:.18em;font-weight:800}h1{margin:0;font-size:clamp(3rem,9vw,7.2rem);line-height:.86;letter-spacing:-.06em}.subtitle{margin:1rem 0 0;color:#d4e7db;max-width:720px;font-size:1.08rem}.update-card,.summary-card,.panel{background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(12px)}.update-card{min-width:230px;border-radius:1rem;padding:1rem 1.1rem}.update-card span,.summary-card span,.section-title p,.detail-meta,footer{color:var(--muted)}.update-card strong{display:block;margin-top:.45rem}main{padding:1.5rem clamp(1rem,5vw,5rem) 3.5rem}.summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-bottom:1.1rem}.summary-card{border-radius:1rem;padding:1rem}.summary-card strong{display:block;font-size:1.45rem;margin:.35rem 0;overflow:hidden;text-overflow:ellipsis}.panel{border-radius:1.15rem;padding:1rem;margin-bottom:1.15rem}.panel-header{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}.section-title h2{margin:0 0 .25rem;font-size:1.6rem}.section-title p{margin:0}input,select{width:min(360px,100%);background:rgba(5,13,10,.82);color:var(--text);border:1px solid var(--line-2);border-radius:.8rem;padding:.78rem .9rem;outline:none}input:focus,select:focus{border-color:var(--accent)}.table-wrap{overflow-x:auto;margin-top:1rem}table{width:100%;border-collapse:collapse;min-width:850px}.compact table{min-width:720px}th,td{padding:.74rem .62rem;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{background:rgba(255,255,255,.055);color:#e9f3ee;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}td.num,th.num{text-align:right}tbody tr:hover{background:rgba(35,198,109,.10)}.rank{display:inline-flex;width:2.1rem;height:2.1rem;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,.10);font-weight:900}.rank.top{color:#2d2104;background:linear-gradient(135deg,#ffd65e,#fff3b2)}.rank.second{color:#121820;background:linear-gradient(135deg,#d8e2ec,#fff)}.rank.third{color:#271607;background:linear-gradient(135deg,#d7984d,#ffd0a0)}.total{font-weight:900}.grid-2{display:grid;grid-template-columns:1.15fr .85fr;gap:1.15rem;align-items:start}.podium-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem}.podium-card{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border-radius:1rem;padding:1rem;min-height:135px}.podium-card .medal{font-size:2rem;margin-bottom:.5rem}.podium-card strong{display:block;font-size:1.25rem}.podium-card small{color:var(--muted);display:block;margin-top:.3rem}.status{display:inline-flex;align-items:center;gap:.35rem;border-radius:999px;padding:.25rem .55rem;font-size:.78rem;border:1px solid var(--line)}.status.complete{background:rgba(35,198,109,.15);color:#b8ffd7}.status.pending{background:rgba(244,201,93,.13);color:#ffe7a5}.match{font-weight:700}.detail-empty{color:var(--muted);padding:1rem;border-radius:.9rem;border:1px dashed var(--line-2);margin-top:1rem}.detail-card{border:1px solid var(--line);border-radius:.9rem;padding:.85rem;margin-top:.75rem;background:rgba(255,255,255,.035)}.detail-card strong{display:flex;justify-content:space-between;gap:.7rem;margin-bottom:.35rem}.badge{display:inline-flex;align-items:center;border-radius:999px;padding:.2rem .55rem;font-size:.78rem;background:rgba(91,215,255,.14);color:#b8efff;white-space:nowrap}.stats-grid{display:grid;gap:.8rem;margin-top:1rem}.stat-item{border:1px solid var(--line);border-radius:.9rem;padding:.85rem;background:rgba(255,255,255,.035)}.stat-item strong{display:block;font-size:1.05rem;margin-bottom:.25rem}.stat-item span{color:var(--muted)}.error{border:1px solid rgba(255,119,119,.45);background:rgba(255,119,119,.12);color:#ffd7d7;border-radius:1rem;padding:1rem}footer{padding:1.4rem clamp(1rem,5vw,5rem) 2.5rem;border-top:1px solid var(--line)}@media(max-width:980px){.hero,.panel-header{flex-direction:column;align-items:flex-start}.summary-grid,.grid-2,.podium-grid{grid-template-columns:1fr}.update-card{width:100%}h1{font-size:clamp(3.4rem,15vw,5.8rem)}table{min-width:760px}.compact table{min-width:700px}}
+:root {
+  --bg: #06110d;
+  --panel: rgba(14,27,23,.86);
+  --text: #f4fbf6;
+  --muted: #a7bdb1;
+  --line: rgba(255,255,255,.12);
+  --line-2: rgba(255,255,255,.20);
+  --accent: #23c66d;
+  --accent-2: #f4c95d;
+  --blue: #5bd7ff;
+  --shadow: 0 24px 70px rgba(0,0,0,.32);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 90% 0%, rgba(35,198,109,.28), transparent 34rem),
+    radial-gradient(circle at 0% 20%, rgba(91,215,255,.14), transparent 25rem),
+    linear-gradient(135deg, #030605, var(--bg) 55%, #0a1c15);
+}
+
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at center, black, transparent 75%);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem clamp(1rem,5vw,5rem) 2.2rem;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.eyebrow {
+  margin: 0 0 .4rem;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3rem,9vw,7.2rem);
+  line-height: .86;
+  letter-spacing: -.06em;
+}
+
+.subtitle {
+  margin: 1rem 0 0;
+  color: #d4e7db;
+  max-width: 720px;
+  font-size: 1.08rem;
+}
+
+.update-card,
+.summary-card,
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.update-card {
+  min-width: 230px;
+  border-radius: 1rem;
+  padding: 1rem 1.1rem;
+}
+
+.update-card span,
+.summary-card span,
+.section-title p,
+.detail-meta,
+footer {
+  color: var(--muted);
+}
+
+.update-card strong {
+  display: block;
+  margin-top: .45rem;
+}
+
+main {
+  padding: 1.5rem clamp(1rem,5vw,5rem) 3.5rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.summary-card {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.summary-card strong {
+  display: block;
+  font-size: 1.45rem;
+  margin: .35rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.panel {
+  border-radius: 1.15rem;
+  padding: 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.section-title h2 {
+  margin: 0 0 .25rem;
+  font-size: 1.6rem;
+}
+
+.section-title p {
+  margin: 0;
+}
+
+input,
+select {
+  width: min(360px,100%);
+  background: rgba(5,13,10,.82);
+  color: var(--text);
+  border: 1px solid var(--line-2);
+  border-radius: .8rem;
+  padding: .78rem .9rem;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--accent);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.compact table {
+  min-width: 720px;
+}
+
+th,
+td {
+  padding: .74rem .62rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  background: rgba(255,255,255,.055);
+  color: #e9f3ee;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+td.num,
+th.num {
+  text-align: right;
+}
+
+tbody tr:hover {
+  background: rgba(35,198,109,.10);
+}
+
+.rank {
+  display: inline-flex;
+  width: 2.1rem;
+  height: 2.1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,.10);
+  font-weight: 900;
+}
+
+.rank.top {
+  color: #2d2104;
+  background: linear-gradient(135deg,#ffd65e,#fff3b2);
+}
+
+.rank.second {
+  color: #121820;
+  background: linear-gradient(135deg,#d8e2ec,#fff);
+}
+
+.rank.third {
+  color: #271607;
+  background: linear-gradient(135deg,#d7984d,#ffd0a0);
+}
+
+.total {
+  font-weight: 900;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.podium-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.podium-card {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
+  border-radius: 1rem;
+  padding: 1rem;
+  min-height: 135px;
+}
+
+.podium-card .medal {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.podium-card strong {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.podium-card small {
+  color: var(--muted);
+  display: block;
+  margin-top: .3rem;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  border-radius: 999px;
+  padding: .25rem .55rem;
+  font-size: .78rem;
+  border: 1px solid var(--line);
+}
+
+.status.complete {
+  background: rgba(35,198,109,.15);
+  color: #b8ffd7;
+}
+
+.status.pending {
+  background: rgba(244,201,93,.13);
+  color: #ffe7a5;
+}
+
+.match {
+  font-weight: 700;
+}
+
+.detail-empty {
+  color: var(--muted);
+  padding: 1rem;
+  border-radius: .9rem;
+  border: 1px dashed var(--line-2);
+  margin-top: 1rem;
+}
+
+.detail-card {
+  border: 1px solid var(--line);
+  border-radius: .9rem;
+  padding: .85rem;
+  margin-top: .75rem;
+  background: rgba(255,255,255,.035);
+}
+
+.detail-card strong {
+  display: flex;
+  justify-content: space-between;
+  gap: .7rem;
+  margin-bottom: .35rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: .2rem .55rem;
+  font-size: .78rem;
+  background: rgba(91,215,255,.14);
+  color: #b8efff;
+  white-space: nowrap;
+}
+
+.stats-grid {
+  display: grid;
+  gap: .8rem;
+  margin-top: 1rem;
+}
+
+.stat-item {
+  border: 1px solid var(--line);
+  border-radius: .9rem;
+  padding: .85rem;
+  background: rgba(255,255,255,.035);
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: .25rem;
+}
+
+.stat-item span {
+  color: var(--muted);
+}
+
+.error {
+  border: 1px solid rgba(255,119,119,.45);
+  background: rgba(255,119,119,.12);
+  color: #ffd7d7;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+footer {
+  padding: 1.4rem clamp(1rem,5vw,5rem) 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+  .hero,
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summary-grid,
+  .grid-2,
+  .podium-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .update-card {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(3.4rem,15vw,5.8rem);
+  }
+
+  table {
+    min-width: 760px;
+  }
+
+  .compact table {
+    min-width: 760px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 700px) {
-  html, body {
+  html,
+  body {
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -15,11 +414,25 @@
 
   .summary-grid,
   .podium,
-  #rankingTable {
+  .podium-grid,
+  .summary-card,
+  .podium-card,
+  .panel {
     width: 100%;
+    max-width: 100%;
   }
 
+  .section-title h2 {
+    font-size: 1.45rem;
+  }
+
+  .section-title p {
+    overflow-wrap: break-word;
+  }
+
+  /* Ranking móvil: solo muestra Puesto / Participante / Total */
   #rankingTable {
+    width: 100%;
     min-width: 0;
   }
 
@@ -44,44 +457,71 @@
     font-size: .9rem;
   }
 
+  #rankingTable th:nth-child(1),
+  #rankingTable td:nth-child(1) {
+    width: 20%;
+  }
+
+  #rankingTable th:nth-child(2),
+  #rankingTable td:nth-child(2) {
+    width: 55%;
+  }
+
   #rankingTable th:nth-child(9),
   #rankingTable td:nth-child(9) {
+    width: 25%;
     text-align: right;
     font-weight: 900;
   }
-}
-@media (max-width: 700px) {
-  /* Hace scrolleables las tablas que no son el ranking */
-  .compact {
+
+  /* Tablas inferiores: scroll horizontal real */
+  .compact,
+  .table-wrap.compact {
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
   }
 
   #resultsTable,
   #bonusTable {
-    min-width: 760px;
+    width: max-content;
+    min-width: 850px;
   }
 
-  /* Hace scrolleables las tarjetas de detalle por participante */
+  /* Detalle por participante: scroll horizontal dentro del panel */
   #participantDetail {
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    padding-bottom: .35rem;
   }
 
   .detail-card {
-    min-width: 680px;
+    width: max-content;
+    min-width: 760px;
   }
 
-  /* Evita que los textos grandes rompan el layout */
-  .panel {
-    overflow: hidden;
+  .detail-card strong {
+    max-width: 720px;
   }
 
-  .section-title p {
-    overflow-wrap: break-word;
+  .stats-grid {
+    width: 100%;
+  }
+}
+
+/* Mobile horizontal: muestra desglose completo del ranking */
+@media (max-width: 900px) and (orientation: landscape) {
+  #rankingTable {
+    min-width: 850px;
+  }
+
+  #rankingTable th,
+  #rankingTable td {
+    display: table-cell;
   }
 }
